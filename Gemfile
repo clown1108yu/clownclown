@@ -3,9 +3,11 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~>4.2.1'
-gem 'sqlite3',group: :development
+gem 'pg', '~> 0.20'
+gem 'rails_12factor', group: :production
+
 # 本番ではpostgressを使用する
-gem 'pg', '0.15.1', group: :production
+
 gem 'rails-i18n'
 gem 'will_paginate', '~> 3.0'
 # Use SCSS for stylesheets
